@@ -1,2 +1,2 @@
 # Visual-Novel-Engine
-A simple visual novel program that's intended to both make and run visual novels.
+A simple program that will enable you to make/run visual novels easily.
