@@ -11,4 +11,12 @@ public class Visual extends Application {
 		
 	}
 	
+	public void maker() {
+		
+	}
+	
+	public void library() {
+		
+	}
+	
 }
