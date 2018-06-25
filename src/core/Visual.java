@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
 
 public class Visual extends Application {
 	
@@ -15,7 +16,7 @@ public class Visual extends Application {
 		Group root = new Group();
 		Scene scene = new Scene(root);
 		
-		Canvas canvas = new Canvas(WIDTH,HEIGHT);
+		Canvas canvas = new Canvas();
 		
 		// stage.setResizable(false);
 		

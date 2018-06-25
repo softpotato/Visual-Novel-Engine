@@ -10,11 +10,23 @@ public class Animation {
 	private Image[] frames;
 	private double duration;
 	
+	public Animation(Image[] frames,double duration) {
+		this.frames = frames;
+		this.duration = duration;
+	}
+	
+	/*
+	 * TODO: Add exception here to catch if there is no Images loaded.
+	 */
 	public Image getImage(double time) {
 		
-		int index = (int) ((time % (frames.length * duration)) / duration);
-		
-		return frames[index];
+		if (frames.length > 1) {
+			int index = (int) ((time % (frames.length * duration)) / duration);
+			
+			return frames[index];
+		} else {
+			return frames[0];
+		}
 		
 	}
 	
