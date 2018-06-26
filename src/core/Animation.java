@@ -5,6 +5,8 @@ import javafx.scene.image.Image;
 /*
  * Note: I legit copied this code right out of a JavaFX tutorial, though I don't understand any of it. I might change it
  * or never use it.
+ * 
+ * I don't think this will be useful except for particle effects
  */
 public class Animation {
 	private Image[] frames;
