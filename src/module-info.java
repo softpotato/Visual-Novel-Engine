@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author Softp
+ * @author Soft Potato
  *
  */
 module softpotato.visualnovel.module {

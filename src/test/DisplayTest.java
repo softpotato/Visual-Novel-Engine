@@ -56,9 +56,15 @@ public class DisplayTest implements Runnable {
 		glfwWindowHint(GLFW_VISIBLE,GLFW_FALSE);	// Makes window invisible on creation
 		glfwWindowHint(GLFW_RESIZABLE,GLFW_TRUE);	// Makes window resizeable
 		
-		window = glfwCreateWindow(300,300,"Display Test", null,null);
+		window = glfwCreateWindow(300,300,"Display Test", NULL,NULL);
 		if (window == NULL)
 			throw new IllegalStateException("Failed to create new GLFW window");
+		
+		
+		glfwSetKeyCallback(window, (window, key, scancode, action, action, mods) -> {
+			if (key == GLFW_KEY_ESCAPE && GLFW_RELEASE)
+				glfwSetWindowShouldClose(window,true);
+		});
 		
 	}
 	
